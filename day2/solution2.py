@@ -2,13 +2,7 @@ with open('input1.txt', 'r') as f:
     line = f.read().strip()
 
 def is_invalid(num):
-    s = str(num)
-    n = len(s)
-    for p in range(1, n):
-        if n % p == 0:
-            pattern = s[:p]
-            if pattern * (n // p) == s:
-                return True
+    
     return False
 
 def find_invalid_digits(sequence_range, invalid_digits):
