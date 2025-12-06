@@ -13,5 +13,4 @@ for row_index in range(1,len(matrix[:-1])):
         else:
             matrix[row_index][column_index] *= matrix[row_index-1][column_index]
 
-#Showing Final Cummulated Row
 print("Final Result: ",sum(matrix[-2]))
